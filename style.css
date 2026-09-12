@@ -54,7 +54,7 @@ button:hover {
 
 button.delete-btn {
   background-color: #6c757d;
-  color: #4e5662
+  color: #4e5662;
   border: none;
   border-radius: 4px;
   padding: 4px 8px;
@@ -90,11 +90,40 @@ li:last-child {
   right: 20px;
 }
 
-.lang-switcher select {
-  padding: 4px 8px;
+.lang-btn {
+  padding: 4px 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #fff;
   font-family: var(--font-body-ko);
   cursor: pointer;
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 4px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  min-width: 80px;
+  z-index: 10;
+}
+
+.lang-dropdown.hidden {
+  display: none;
+}
+
+.lang-dropdown li {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.lang-dropdown li:hover {
+  background-color: #f0f0f0;
 }
