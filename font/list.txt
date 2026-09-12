@@ -1,1 +1,3 @@
-Ko: Galmuri9.ttf
+Emoji: NotoColorEmoji-Regular.ttf (NotoColorEmoji)
+
+Ko: Galmuri9.ttf (Galmuri9)
