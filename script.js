@@ -9,7 +9,7 @@ function addMemo() {
   const li = document.createElement('li');
   li.textContent = text;
 
-  const deleteBtn = document.createElement('deleteButton');
+  const deleteBtn = document.createElement('button');
   deleteBtn.textContent = '❌';
   deleteBtn.addEventListener('click', () => {
     li.remove();
