@@ -65,3 +65,7 @@ li {
 li:last-child {
   border-bottom: none;
 }
+
+li button {
+  margin-left: auto;
+}
