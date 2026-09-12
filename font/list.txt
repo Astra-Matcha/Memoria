@@ -1,3 +1,6 @@
 Emoji: NotoColorEmoji-Regular.ttf (NotoColorEmoji)
 
-Ko: Galmuri9.ttf (Galmuri9)
+Ko: Galmuri11.ttf (Galmuri11)
+En: Galmuri11.ttf (Galmuri11)
+Jp: Galmuri11.ttf (Galmuri11)
+Cn: Galmuri11.ttf (Galmuri11)
