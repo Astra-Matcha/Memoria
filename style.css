@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: var(--font-body-ko);
-  background-color: #fffef2;
+  background-color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -42,7 +42,7 @@ button {
   padding: 10px 15px;
   border: none;
   background-color: #4dfad2;
-  color: white;
+  color: #858585;
   border-radius: 4px;
   cursor: pointer;
 }
