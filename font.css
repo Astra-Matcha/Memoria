@@ -1,10 +1,4 @@
-@font-face {
-  font-family:'Galmuri9';
-  src: url('font/Galmuri9.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
+/*Emoji*/
 @font-face {
   font-family: 'NotoColorEmoji';
   src: url('font/NotoColorEmoji-Regular.ttf') format('truetype');
@@ -12,7 +6,22 @@
   font-style: normal;
 }
 
+/* Korean */
+@font-face {
+    font-family: Galmuri11;
+    src: url('res/fonts/Galmuri11.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Galmuri11;
+    src: url('res/fonts/Galmuri11-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap
+}
+
 :root {
-  --font-title: 'Galmuri9', 'NotoColorEmoji';
-  --font-body-ko: 'Galmuri9', sans-serif;
+  --font-title: 'Galmuri9', 'NotoColorEmoji', sans-serif;
+  --font-body-ko: 'Galmuri9', 'NotoColorEmoji', sans-serif;
 }
