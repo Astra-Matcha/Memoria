@@ -8,11 +8,16 @@ function addMemo() {
 
   const li = document.createElement('li');
   li.textContent = text;
+
   const deleteBtn = document.createElement('button');
   deleteBtn.textContent = 'X';
-  deleteBtn.addEventListener('click', () => li.remove());
+  deleteBtn.addEventListener('click', () => {
+    li.remove();
+  });
+
   li.appendChild(deleteBtn);
   memoList.appendChild(li);
+
   memoInput.value = '';
 }
 
