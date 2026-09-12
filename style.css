@@ -51,6 +51,19 @@ button:hover {
   background-color: #27baa8;
 }
 
+deleteButton {
+  padding: 10px 15px;
+  border: none;
+  background-color: #adb5bd;
+  color: #4e5662;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+deleteButton:hover {
+  background-color: #6c757d;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -63,7 +76,7 @@ li {
   border-bottom: 1px solid #eee;
   justify-content: space-between;
   align-items: center;
-  gap: 10px; /* Adds space between text and the button */
+  gap: 10px;
 }
 
 li:last-child {
