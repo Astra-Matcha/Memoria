@@ -25,6 +25,8 @@
   --font-title: 'Galmuri11', 'NotoColorEmoji', sans-serif;
   --font-body-ko: 'Galmuri11', 'NotoColorEmoji', sans-serif;
   --font-body-en: 'Galmuri11', 'NotoColorEmoji', sans-serif;
+  --font-body-jp: 'Galmuri11', 'NotoColorEmoji', sans-serif;
+  --font-body-cn: 'Galmuri11', 'NotoColorEmoji', sans-serif;
 }
 
 input, button, textarea, select {
