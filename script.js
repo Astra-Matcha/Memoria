@@ -9,7 +9,10 @@ function addMemo() {
   const li = document.createElement('li');
   li.textContent = text;
   memoList.appendChild(li);
-
+  const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = 'X';
+    deleteBtn.addEventListener('click', () => li.remove());
+    li.appendChild(deleteBtn);
   memoInput.value = '';
 }
 
