@@ -11,6 +11,7 @@ body {
 }
 
 .container {
+  position:relative;
   width: 100%;
   max-width: 400px;
   background: white;
@@ -83,3 +84,17 @@ li:last-child {
   border-bottom: none;
 }
 
+.lang-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.lang-switcher select {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: var(--font-body-ko);
+  cursor: pointer;
+}
