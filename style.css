@@ -58,14 +58,15 @@ ul {
 }
 
 li {
+  display: flex;
   padding: 10px;
   border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px; /* Adds space between text and the button */
 }
 
 li:last-child {
   border-bottom: none;
 }
 
-li button {
-  margin-right: auto;
-}
