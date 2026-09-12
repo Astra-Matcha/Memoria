@@ -11,6 +11,7 @@ function addMemo() {
 
   const deleteBtn = document.createElement('button');
   deleteBtn.textContent = '❌';
+  deleteBtn.className = 'delete-btn';
   deleteBtn.addEventListener('click', () => {
     li.remove();
   });
