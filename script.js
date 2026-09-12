@@ -1,6 +1,8 @@
 const memoInput = document.getElementById('memoInput');
 const addBtn = document.getElementById('addBtn');
 const memoList = document.getElementById('memoList');
+const langBtn = document.getElementById('langBtn');
+const langDropdown = document.getElementById('langDropdown');
 
 function addMemo() {
   const text = memoInput.value.trim();
@@ -25,4 +27,21 @@ function addMemo() {
 addBtn.addEventListener('click', addMemo);
 memoInput.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') addMemo();
+});
+
+langBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  langDropdown.classList.toggle('hidden');
+});
+
+document.addEventListener('click', () => {
+  langDropdown.classList.add('hidden');
+});
+
+document.querySelectorAll('.lang-dropdown li').forEach(item => {
+  item.addEventListener('click', (e) => {
+    const selectedLang = e.target.getAttribute('data-lang');
+    langBtn.textContent = selectedLang.toUpperCase();
+    langDropdown.classList.add('hidden');
+  });
 });
