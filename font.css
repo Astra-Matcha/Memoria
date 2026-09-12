@@ -1,1 +1,18 @@
+@font-face {
+  font-family:'Galmuri9';
+  src: url('font/Galmuri9.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'NotoColorEmoji';
+  src: url('font/NotoColorEmoji-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-title: 'Galmuri9', 'NotoColorEmoji';
+  --font-body-ko: 'Galmuri9', sans-serif;
+}
