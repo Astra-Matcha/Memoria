@@ -6,7 +6,7 @@
   font-style: normal;
 }
 
-/* Korean */
+/* Kor/Eng */
 @font-face {
     font-family: Galmuri11;
     src: url('res/fonts/Galmuri11.ttf') format('truetype');
@@ -22,6 +22,27 @@
 }
 
 :root {
-  --font-title: 'Galmuri9', 'NotoColorEmoji', sans-serif;
-  --font-body-ko: 'Galmuri9', 'NotoColorEmoji', sans-serif;
+  --font-title: 'Galmuri11', 'NotoColorEmoji', sans-serif;
+  --font-body-ko: 'Galmuri11', 'NotoColorEmoji', sans-serif;
+  --font-body-en: 'Galmuri11', 'NotoColorEmoji', sans-serif;
+}
+
+input, button, textarea, select {
+  font-family: inherit;
+}
+
+body {
+  font-family: var(--font-body-ko);
+}
+
+h1, h2, h3, h4, .title {
+  font-family: var(--font-title);
+}
+
+:lang(ko) {
+  font-family: var(--font-body-ko);
+}
+
+:lang(en) {
+  font-family: var(--font-body-en);
 }
