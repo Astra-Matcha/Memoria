@@ -3,6 +3,13 @@ const addBtn = document.getElementById('addBtn');
 const memoList = document.getElementById('memoList');
 const langBtn = document.getElementById('langBtn');
 const langDropdown = document.getElementById('langDropdown');
+//언어 별 플레이스홀더
+const translations = {
+  ko:{placeholder:"메모를 입력하세요..."},
+  en:{placeholder:"Enter a memo..."},
+  jp:{placeholder:"メモを入力してください。。。"},
+  cn:{placeholder:"请输入备忘录。。。"}
+}
 
 function addMemo() {
   const text = memoInput.value.trim();
