@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: var(--font-body-ko);
-  background-color: #f4f4f9;
+  background-color: #fffef2;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -41,14 +41,14 @@ input[type="text"] {
 button {
   padding: 10px 15px;
   border: none;
-  background-color: #007bff;
+  background-color: #caf0f8;
   color: white;
   border-radius: 4px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #90e0ef;
 }
 
 ul {
