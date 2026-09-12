@@ -50,5 +50,6 @@ document.querySelectorAll('.lang-dropdown li').forEach(item => {
     const selectedLang = e.target.getAttribute('data-lang');
     langBtn.textContent = selectedLang.toUpperCase();
     langDropdown.classList.add('hidden');
+    memoInput.placeholder = translations[selectedLang].placeholder;
   });
 });
