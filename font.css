@@ -9,14 +9,14 @@
 /* Kor/Eng */
 @font-face {
     font-family: Galmuri11;
-    src: url('res/fonts/Galmuri11.ttf') format('truetype');
+    src: url('fonts/Galmuri11.ttf') format('truetype');
     font-weight: 400;
     font-display: swap
 }
 
 @font-face {
     font-family: Galmuri11;
-    src: url('res/fonts/Galmuri11-Bold.ttf') format('truetype');
+    src: url('fonts/Galmuri11-Bold.ttf') format('truetype');
     font-weight: 700;
     font-display: swap
 }
