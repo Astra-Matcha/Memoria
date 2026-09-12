@@ -41,14 +41,14 @@ input[type="text"] {
 button {
   padding: 10px 15px;
   border: none;
-  background-color: #1fbee3;
+  background-color: #62dae0;
   color: #4e5662;
   border-radius: 4px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #1fbade;
+  background-color: #5ccbd1;
 }
 
 ul {
