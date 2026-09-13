@@ -1,7 +1,7 @@
 /* Emoji */
 @font-face {
-  font-family: 'NotoColorEmoji';
-  src: url('font/NotoColorEmoji-Regular.ttf') format('truetype');
+  font-family: 'NotoEmoji';
+  src: url('font/NotoEmoji=VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,11 +22,11 @@
 }
 
 :root {
-  --font-title: 'Galmuri11', 'NotoColorEmoji', sans-serif;
-  --font-body-ko: 'Galmuri11', 'NotoColorEmoji', sans-serif;
-  --font-body-en: 'Galmuri11', 'NotoColorEmoji', sans-serif;
-  --font-body-jp: 'Galmuri11', 'NotoColorEmoji', sans-serif;
-  --font-body-cn: 'Galmuri11', 'NotoColorEmoji', sans-serif;
+  --font-title: 'Galmuri11', 'NotoEmoji', sans-serif;
+  --font-body-ko: 'Galmuri11', 'NotoEmoji', sans-serif;
+  --font-body-en: 'Galmuri11', 'NotoEmoji', sans-serif;
+  --font-body-jp: 'Galmuri11', 'NotoEmoji', sans-serif;
+  --font-body-cn: 'Galmuri11', 'NotoEmoji', sans-serif;
 }
 
 input, button, textarea, select {
