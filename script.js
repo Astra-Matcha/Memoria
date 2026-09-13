@@ -21,7 +21,7 @@ function addMemo() {
 
   // 3. 수정 버튼
   const editBtn = document.createElement('button');
-  editBtn.textContent = '📝';
+  editBtn.textContent = '✎';
   editBtn.className = 'edit-btn';
 
   // 4. 삭제 버튼
@@ -46,16 +46,24 @@ function addMemo() {
 
     // 저장 처리 함수
     const saveEdit = () => {
+      if (!isEditing) return;
+
       const newText = editInput.value.trim();
       if (newText !== '') {
         memoTextSpan.textContent = newText;
       }
-      // input을 다시 원래 span으로 교체
+
       if (li.contains(editInput)) {
         li.replaceChild(memoTextSpan, editInput);
       }
-      editBtn.textContent = '📝';
+
+      editBtn.textContent = '✎';
       isEditing = false;
+
+      editBtn.disabled = true;
+      setTimeout(() => {
+        editBtn.disabled = false;
+      }, 300);
     };
 
     // 키 입력 처리 (Enter: 저장, ESC: 취소)
@@ -66,7 +74,7 @@ function addMemo() {
         if (li.contains(editInput)) {
           li.replaceChild(memoTextSpan, editInput);
         }
-        editBtn.textContent = '📝';
+        editBtn.textContent = '✎';
         isEditing = false;
       }
     });
