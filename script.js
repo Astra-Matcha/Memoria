@@ -4,34 +4,6 @@ const memoList = document.getElementById('memoList');
 const langBtn = document.getElementById('langBtn');
 const langDropdown = document.getElementById('langDropdown');
 
-// 언어 별 번역
-const translations = {
-  ko: {
-    input: {
-      placeholder: "메모를 입력하세요...",
-      add: "추가"
-    }
-  },
-  en: {
-    input: {
-      placeholder: "Enter a memo...",
-      add: "Add"
-    }
-  },
-  ja: {
-    input: {
-      placeholder: "メモを入力してください...",
-      add: "追加"
-    }
-  },
-  zh: {
-    input: {
-      placeholder: "请输入备忘录...",
-      add: "添加"
-    }
-  }
-}; // 👈 여기서 정확히 닫아주어야 합니다!
-
 function addMemo() {
   const text = memoInput.value.trim();
   if (text === '') return;
