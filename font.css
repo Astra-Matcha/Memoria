@@ -1,7 +1,7 @@
 /* Emoji */
 @font-face {
   font-family: 'NotoEmoji';
-  src: url('font/NotoEmoji=VariableFont_wght.ttf') format('truetype');
+  src: url('font/NotoEmoji-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
