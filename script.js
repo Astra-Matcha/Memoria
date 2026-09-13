@@ -21,7 +21,7 @@ function addMemo() {
 
   // 3. 수정 버튼
   const editBtn = document.createElement('button');
-  editBtn.textContent = '✏️';
+  editBtn.textContent = '📝';
   editBtn.className = 'edit-btn';
 
   // 4. 삭제 버튼
@@ -54,7 +54,7 @@ function addMemo() {
       if (li.contains(editInput)) {
         li.replaceChild(memoTextSpan, editInput);
       }
-      editBtn.textContent = '✏️';
+      editBtn.textContent = '📝';
       isEditing = false;
     };
 
@@ -66,7 +66,7 @@ function addMemo() {
         if (li.contains(editInput)) {
           li.replaceChild(memoTextSpan, editInput);
         }
-        editBtn.textContent = '✏️';
+        editBtn.textContent = '📝';
         isEditing = false;
       }
     });
