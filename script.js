@@ -4,7 +4,7 @@ const memoList = document.getElementById('memoList');
 const langBtn = document.getElementById('langBtn');
 const langDropdown = document.getElementById('langDropdown');
 
-// 언어별 번역 데이터
+// 언어 별 번역
 const translations = {
   ko: {
     input: {
@@ -30,9 +30,8 @@ const translations = {
       add: "添加"
     }
   }
-};
+}; // 👈 여기서 정확히 닫아주어야 합니다!
 
-// 메모 추가 함수
 function addMemo() {
   const text = memoInput.value.trim();
   if (text === '') return;
@@ -53,7 +52,7 @@ function addMemo() {
   memoInput.value = '';
 }
 
-// 1. 메모 추가 이벤트 리스너
+// 이벤트 리스너 등록 (요소 존재 여부 체크)
 if (addBtn && memoInput) {
   addBtn.addEventListener('click', addMemo);
   memoInput.addEventListener('keypress', (e) => {
@@ -61,7 +60,6 @@ if (addBtn && memoInput) {
   });
 }
 
-// 2. 언어 드롭다운 토글 이벤트 (null 방지 안전장치 추가)
 if (langBtn && langDropdown) {
   langBtn.addEventListener('click', (e) => {
     e.stopPropagation();
@@ -80,11 +78,8 @@ if (langBtn && langDropdown) {
         langBtn.textContent = selectedLang.toUpperCase();
         langDropdown.classList.add('hidden');
         
-        // 텍스트 및 placeholder 변경
         memoInput.placeholder = translations[selectedLang].input.placeholder;
         addBtn.textContent = translations[selectedLang].input.add;
-        
-        // HTML lang 속성 변경 (font.css의 :lang() 셀렉터와 연동되어 Galmuri11 적용)
         document.documentElement.lang = selectedLang;
       }
     });
