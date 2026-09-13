@@ -22,13 +22,14 @@ const translations = {
       placeholder:"メモを入力してください。。。",
     add:"追加"
     }
-},
+  },
   zh:{
     input:{
       placeholder:"请输入备忘录。。。",
     add:"添加"
     }    
-}
+  }
+};
 
 function addMemo() {
   const text = memoInput.value.trim();
