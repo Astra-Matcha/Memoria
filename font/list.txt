@@ -1,6 +1,6 @@
-Emoji: NotoColorEmoji-Regular.ttf (NotoColorEmoji)
+Emoji: NotoEmoji-VariableFont_wght.ttf (NotoEmoji)
 
 Ko: Galmuri11.ttf (Galmuri11)
 En: Galmuri11.ttf (Galmuri11)
-Jp: Galmuri11.ttf (Galmuri11)
-Cn: Galmuri11.ttf (Galmuri11)
+Ja: Galmuri11.ttf (Galmuri11)
+Zh: Galmuri11.ttf (Galmuri11)
