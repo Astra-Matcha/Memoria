@@ -11,6 +11,23 @@ function addMemo() {
   const li = document.createElement('li');
   li.textContent = text;
 
+  const memoTextSpan = document.createElement('span');
+  memoTextSpan.textContent = text;
+  memoTextSpan.className = 'memo-text';
+
+  const btnGroup = document.createElement('div');
+  btnGroup.className = 'btn-group';
+
+  const editBtn = document.createElement('button');
+  editBtn.textContent = '✏️';
+  editBtn.className = 'edit-btn';
+  editBtn.addEventListener('click', () => {
+    
+    if (newText !== null && newText.trim() !== '') {
+      memoTextSpan.textContent = newText.trim();
+    }
+  });
+
   const deleteBtn = document.createElement('button');
   deleteBtn.textContent = '❌';
   deleteBtn.className = 'delete-btn';
@@ -19,6 +36,16 @@ function addMemo() {
   });
 
   li.appendChild(deleteBtn);
+  memoList.appendChild(li);
+
+  memoInput.value = '';
+
+  btnGroup.appendChild(editBtn);
+  btnGroup.appendChild(deleteBtn);
+
+  li.appendChild(memoTextSpan);
+  li.appendChild(btnGroup);
+
   memoList.appendChild(li);
 
   memoInput.value = '';
