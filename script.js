@@ -3,12 +3,31 @@ const addBtn = document.getElementById('addBtn');
 const memoList = document.getElementById('memoList');
 const langBtn = document.getElementById('langBtn');
 const langDropdown = document.getElementById('langDropdown');
-//언어 별 플레이스홀더
+//언어 별 번역
 const translations = {
-  ko:{placeholder:"메모를 입력하세요..."},
-  en:{placeholder:"Enter a memo..."},
-  jp:{placeholder:"メモを入力してください。。。"},
-  cn:{placeholder:"请输入备忘录。。。"}
+  ko:{
+    input:{
+      placeholder:"메모를 입력하세요...",
+      addbtn:"추가"
+    }
+  },
+  en:{
+    input:{
+      placeholder:"Enter a memo...",
+      addbtn:"add"
+    }
+  },
+  ja:{
+    input:{
+      placeholder:"メモを入力してください。。。",
+    addbtn:"追加"
+    }
+},
+  zh:{
+    input:{
+      placeholder:"请输入备忘录。。。",
+    addbtn:"添加"
+    }    
 }
 
 function addMemo() {
@@ -50,6 +69,7 @@ document.querySelectorAll('.lang-dropdown li').forEach(item => {
     const selectedLang = e.target.getAttribute('data-lang');
     langBtn.textContent = selectedLang.toUpperCase();
     langDropdown.classList.add('hidden');
-    memoInput.placeholder = translations[selectedLang].placeholder;
+    memoInput.placeholder = translations[selectedLang].input.placeholder;
+    addBtn.textcontent = translations[selectedLang].input.addbtn; 
   });
 });
