@@ -8,25 +8,25 @@ const translations = {
   ko:{
     input:{
       placeholder:"메모를 입력하세요...",
-      addbtn:"추가"
+      add:"추가"
     }
   },
   en:{
     input:{
       placeholder:"Enter a memo...",
-      addbtn:"add"
+      add:"add"
     }
   },
   ja:{
     input:{
       placeholder:"メモを入力してください。。。",
-    addbtn:"追加"
+    add:"追加"
     }
 },
   zh:{
     input:{
       placeholder:"请输入备忘录。。。",
-    addbtn:"添加"
+    add:"添加"
     }    
 }
 
@@ -70,6 +70,6 @@ document.querySelectorAll('.lang-dropdown li').forEach(item => {
     langBtn.textContent = selectedLang.toUpperCase();
     langDropdown.classList.add('hidden');
     memoInput.placeholder = translations[selectedLang].input.placeholder;
-    addBtn.textcontent = translations[selectedLang].input.addbtn; 
+    addBtn.textcontent = translations[selectedLang].input.add; 
   });
 });
